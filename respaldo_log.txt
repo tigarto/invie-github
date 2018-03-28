@@ -1,23 +1,1000 @@
-commit 6abe9617ff6b68d52ffe0c8eda52f8658a893c8e
-Author: tigarto <helpu1409@gmail.com>
-Date:   Tue Mar 27 22:37:48 2018 -0500
-
-    Agregando guitarra acustica
-
-commit f685205d8d0c1dd781f1c1928bb295e74ef74f07
-Author: tigarto <helpu1409@gmail.com>
-Date:   Tue Mar 27 22:36:34 2018 -0500
-
-    Sumando nuevo hero
-
-commit ac85b68aa93d13dc0b0a40d422a6cca001c1fbab
-Author: tigarto <helpu1409@gmail.com>
-Date:   Tue Mar 27 21:37:53 2018 -0500
-
-    Agregando el header
-
-commit 21e278d6dc2f3b77c63e31b39edb1d57d6415bf9
-Author: tigarto <helpu1409@gmail.com>
-Date:   Tue Mar 27 19:07:21 2018 -0500
-
-    Inicializar el landing (agregar el index.html)
+  367  clear
+  368  ifconfig 
+  369  clear
+  370  cd ..
+  371  ls
+  372  cd ..
+  373  ls
+  374  cd son-emu/
+  375  cd ansible/
+  376  l
+  377  sudo ansible-playbook -i "localhost," -c local install.yml
+  378  son-emu-cli
+  379  clear
+  380  ls
+  381  git clone https://github.com/sonata-nfv/son-install.git
+  382  sudo apt-add-repository -y ppa:ansible/ansible
+  383  sudo apt-get update
+  384  cat ~/.ssh/.vault_pass
+  385  ansible-vault edit group_vars/sp/vault.yml
+  386  clear
+  387  cd son-install/
+  388  ansible-vault edit group_vars/sp/vault.yml
+  389  cat /var/log/ansible.log 
+  390  clear
+  391  gedit roles/sp/defaults/main.yml
+  392  echo sonata | tee ~/.ssh/.vault_pass
+  393  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.21.30.124 sp_ver=3.0" -v
+  394  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.21.30.124 sp_ver=3.0" -vv
+  395  sudo docker ps
+  396  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.21.30.124 sp_ver=3.0" -vvv
+  397  sudo su
+  398  ls
+  399  cd roles/
+  400  ls
+  401  cd sp/
+  402  ls
+  403  cd defaults/
+  404  ls
+  405  pwd
+  406  clear
+  407  ls
+  408  cd ..
+  409  ls
+  410  cd tasks/
+  411  ls
+  412  clear
+  413  ls
+  414  gedit main.yml 
+  415  cd ..
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd sp/vars/
+  420  ls
+  421  pwd
+  422  cd ..
+  423  ls
+  424  cd ..
+  425  ls
+  426  cd sp/
+  427  ls
+  428  pwd
+  429  lookup('env','PWD')
+  430  cd ..
+  431  ls
+  432  cd ..
+  433  ls
+  434  cd roles/sp/tasks/
+  435  ls
+  436  pwd
+  437  sudo /etc/init.d/sonata 
+  438  cd ~/.ansible/tmp/ansible-tmp-1521672903.63-127982592014352/
+  439  ls
+  440  cat pip
+  441  cat pip.py 
+  442  ls
+  443  cd ..
+  444  ls
+  445  cd ..
+  446  ls
+  447  rm tmp/
+  448  rm -rf tmp/
+  449  cd ..
+  450  ls
+  451  cd son-install/
+  452  ls
+  453  ls -ahl
+  454  cd ..
+  455  ls -ahl
+  456  ls .ansible/
+  457  cd .ansible/
+  458  mkdir tmp
+  459  ls
+  460  cd ..
+  461  EXEC /bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/docker_container.py; rm -rf "/root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/" > /dev/null 2>&1 && sleep 0'
+  462  /bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/docker_container.py; rm -rf "/root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/" > /dev/null 2>&1 && sleep 0'
+  463  sudo /bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/docker_container.py; rm -rf "/root/.ansible/tmp/ansible-tmp-1521684040.42-17095357440885/" > /dev/null 2>&1 && sleep 0'
+  464  cd .ansible/
+  465  ls
+  466  cd tmp/
+  467  ls
+  468  sudo docker images
+  469  sudo docker rmi ntboes/postgres-uuid
+  470  clear
+  471  sudo pip install docker-compose
+  472  clear
+  473  pip-docker
+  474  python-docker -v
+  475  apt-get install python-docker
+  476  sudo apt-get install python-docker
+  477  python-docker --version
+  478  apt remove python-docker
+  479  sudo apt remove python-docker
+  480  pip install --upgrade pip
+  481  pip uninstall docker
+  482  sudo pip uninstall docker
+  483  sudo pip install 'docker>=3.0.0,<3.0.1'
+  484  pip list | grep docker
+  485  ifconfig 
+  486  python
+  487  clear
+  488  apt remove python-docker
+  489  sudo apt remove python-docker
+  490  sudo pip uninstall docker
+  491  sudo -H pip uninstall docker
+  492  pip install --upgrade pip
+  493  sudo pip install --upgrade pip
+  494  pip uninstall docker
+  495  sudo apt-get remove docker
+  496  sudo docker
+  497  pip uninstall docker
+  498  sudo pip uninstall docker
+  499  sudo su
+  500  cd son-install/
+  501  ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.20.1.1 sp_ver=3.0" -vv
+  502  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.20.1.1 sp_ver=3.0" -vv
+  503  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.20.1.1 sp_ver=3.0" -vv --limit @/home/tigarto/son-install/utils/deploy/sp.retry
+  504  sudo docker --version
+  505  sudo ansible-playbook utils/deploy/sp.yml -e "target=localhost public_ip=172.20.1.1 sp_ver=3.0" -vv --limit @/home/tigarto/son-install/utils/deploy/sp.retry
+  506  clear
+  507  ls
+  508  cd ..
+  509  ls
+  510  son-emu-cli 
+  511  sudo mn
+  512  clear
+  513  ls
+  514  cd Documents/
+  515  ls
+  516  mkdir github_criollo
+  517  cd github_criollo/
+  518  clear
+  519  git clone https://github.com/tigarto/2018-1.git
+  520  ls
+  521  cd 2018-1/
+  522  ls
+  523  lsb_release 
+  524  sudo lsb_release 
+  525  uname -a
+  526  clear
+  527  sudo ifconfig 
+  528  sudo ifconfig > less
+  529  ls
+  530  rm less 
+  531  sudo ifconfig | less
+  532  clear
+  533  git pull
+  534  clear
+  535  ls
+  536  cd ..
+  537  ls
+  538  cd ~
+  539  ls
+  540  cd son-emu/
+  541  ls
+  542  cd ansible/
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd ..
+  547  ls
+  548  cd ansible/
+  549  sudo ansible-playbook -i "localhost," -c local install.yml
+  550  sudo mn
+  551  sudo mn -c
+  552  clear
+  553  cd ~/Downloads/
+  554  ls
+  555  ls -ahl
+  556  cat studio-3t-linux-x64.sh 
+  557  clear
+  558  ls
+  559  chmod 777 studio-3t-linux-x64.sh 
+  560  ls
+  561  sudo sh studio-3t-linux-x64.sh 
+  562  rm studio-3t-linux-x64.sh 
+  563  sudo sh studio-3t-linux-x64.sh 
+  564  sudo mv robo3t-1.2.1-linux-x86_64-3e50a65 /usr/bin/robomongo
+  565  sudo cd /usr/bin/
+  566  cd /usr/bin/
+  567  ls
+  568  cd robomongo/bin/ 
+  569  ls
+  570  ./robo3t 
+  571  cd ..
+  572  ls -ahl
+  573  ls -s robomongo/bin/robo3t robo3t
+  574  ls -sf robomongo/bin/robo3t robo3t 
+  575  ls -sf robo3t robomongo/bin/robo3t 
+  576  sudo ls -s robo3t robomongo/bin/robo3t 
+  577  sudo ln -s robo3t robomongo/bin/robo3t 
+  578  ls robo*
+  579  ls
+  580  sudo ln -s robomongo/bin/robo3t robo3t
+  581  ls r*
+  582  robo3t 
+  583  exit
+  584  sudo apt-cache search robomongo
+  585  clear
+  586  cd ~/son-emu/ansible
+  587  sudo ansible-playbook -i "localhost," -c local install.yml
+  588  robo3t 
+  589  clear
+  590  sudo /etc/init.d/sonata status
+  591  sudo docker rm stoic_leavitt
+  592  sudo /etc/init.d/sonata status
+  593  sudo docker ps -a
+  594  sudo docker ps -a -f status=exited
+  595  clear
+  596  sudo /etc/init.d/sonata status
+  597  sudo docker ps -a -f status=exited
+  598  sudo docker rm $(docker ps -a -f status=exited -q)
+  599  sudo docker rm $(sudo docker ps -a -f status=exited -q)
+  600  clear
+  601  sudo /etc/init.d/sonata status
+  602  sudo docker rm infallible_clarke
+  603  clear
+  604  sudo /etc/init.d/sonata status
+  605  clear
+  606  ls
+  607  cd ,,
+  608  ls
+  609  cd ..
+  610  clear
+  611  ls
+  612  cd son-install/
+  613  ls
+  614  cd roles/
+  615  ls
+  616  cd sp/
+  617  ls
+  618  cd defaults/
+  619  cat main.yml 
+  620  clear
+  621  ls
+  622  cd ..
+  623  ls
+  624  cd ..
+  625  ls
+  626  cat ntp/
+  627  cd mongo/
+  628  ls
+  629  cat Dockerfile 
+  630  exit
+  631  ssh localhost
+  632  clear
+  633  ssh sonata@localhost
+  634  ssh -p 2222 sonata@localhost
+  635  apt-cache search chrome
+  636  clear
+  637  cd Downloads/
+  638  ls
+  639  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+  640  sudo apt-get -f install
+  641  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+  642  clear
+  643  ls
+  644  sudo /etc/init.d/sonata status
+  645  exit
+  646  cd Documents/varios/
+  647  ls
+  648  python3 ensayo1.py 
+  649  python3
+  650  clear
+  651  python3 ensayo1.py 
+  652  clear
+  653  python3 ensayo1.py 
+  654  clear
+  655  python3 ensayo1.py 
+  656  clear
+  657  python3 
+  658  clear
+  659  cd ..
+  660  cd son-install/
+  661  la
+  662  cat roles/sp/tasks/gtk/gui.yml
+  663  cat roles/sp/tasks/gui.yml 
+  664  cat roles/sp/vars/main.yml 
+  665  clear
+  666  sudo add-apt-repository ppa:webupd8team/atom
+  667  sudo apt update; sudo apt install atom
+  668  clear
+  669  ansible-playbook --version
+  670  cat /var/log/ansible.log
+  671  clear
+  672  docker-py
+  673  pip --version
+  674  clear
+  675  sudo /etc/init.d/sonata status | we -l
+  676  sudo /etc/init.d/sonata status | wc -l
+  677  sudo /etc/init.d/sonata status 
+  678  sudo docker network ls
+  679  sudo docker network --help
+  680  sudo docker network inspect son-sp
+  681  clear
+  682  sudo docker ps
+  683  clear
+  684  ls
+  685  cd ..
+  686  ls
+  687  cd .ssh/
+  688  ls
+  689  cat known_hosts 
+  690  cd ..
+  691  ls -ahl
+  692  ls -ahl .ssh
+  693  cd .ssh/
+  694  cat .vault_pass 
+  695  cd ..
+  696  ls
+  697  clear
+  698  ls
+  699  clear
+  700  sudo /etc/init.d/sonata status 
+  701  ls
+  702  clear
+  703  ls
+  704  cd Documents/
+  705  ls
+  706  cd tests/
+  707  ls
+  708  cd ansible/
+  709  ls
+  710  cd test1/
+  711  clear
+  712  vagrant up
+  713  clear
+  714  vagrant up
+  715  ls
+  716  cd /home/tigarto/.vagrant.d/data/machine-index/
+  717  ls
+  718  rm *
+  719  ls
+  720  cd -
+  721  sudo apt-get purge virtualbox*
+  722  dpkg -l | grep virtualbox
+  723  sudo apt-get purge unity-scope-virtualbox
+  724  dpkg -l | grep virtualbox
+  725  sudo gedit /etc/apt/sources.list
+  726  wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+  727  clear
+  728  wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+  729  ping -c 2 www.virtualbox.org
+  730  cd -
+  731  cd ~/Downloads/
+  732  ls
+  733  sudo dpkg -i vagrant_2.0.3_x86_64.deb 
+  734  vagrant --version
+  735  clear
+  736  cd ~/son-install/
+  737  ls
+  738  ansible-vault view group_vars/sp/vault.yml 
+  739  ping www.virtualbox.org
+  740  cat /etc/apt/sources.list
+  741  clear
+  742  wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+  743  sudo apt-get update
+  744  sudo apt-get install virtualbox-5.2
+  745  cleaar
+  746  clear
+  747  sudo /sbin/vboxconfig
+  748  clear
+  749  ls
+  750  cd Documents/
+  751  ls
+  752  cd tests/
+  753  ls
+  754  cd ansible
+  755  ls
+  756  cd test1/
+  757  ls -ahl
+  758  cd ..
+  759  ls
+  760  ls -ahl
+  761  cd test1/
+  762  clear
+  763  ls
+  764  cat Vagrantfile 
+  765  vagrant up
+  766  clear
+  767  vagrant --hrlp
+  768  vagrant status
+  769  ssh curly
+  770  vagrant ss >> ~/.ssh/config
+  771  ssh curly
+  772  rm ~/.ssh/config
+  773  vagrant ss >> ~/.ssh/config
+  774  ssh curly
+  775  rm ~/.ssh/config
+  776  vagrant ssh
+  777  vagrant ssh curly
+  778  vagrant ssh moe
+  779  vagrant ssh curly
+  780  vagrant status
+  781  vagrant status moe
+  782  vagrant ssh >> ~/.ssh/config
+  783  ssh curly
+  784  vagrant ssh-config >> ~/.ssh/config
+  785  clear
+  786  ssh curly
+  787  ansible all -i hosts -m shell -a '/sbin/ifconfig | grep inet.*Bcast'"
+  788  "
+  789  ansible all -i hosts -m shell -a "'/sbin/ifconfig | grep inet.*Bcast'"
+  790  "
+  791  ansible all -i hosts -m shell -a "'/sbin/ifconfig | grep inet.*Bcast'
+  792  clear
+  793  ansible all -i hosts -m shell -a '/sbin/ifconfig | grep inet.*Bcast'
+  794  ssh moe
+  795  ansible all -i hosts -m ping
+  796  ansible all -i hosts.ini -m ping
+  797  mv hosts.ini hosts
+  798  clear
+  799  ansible all -i hosts -m ping
+  800  ls
+  801  cat hosts.ini 
+  802  rm hosts
+  803  ansible all -i hosts -m ping
+  804  clear
+  805  cat /etc/ansible/hosts 
+  806  clear
+  807  ansible all -i hosts -m ping
+  808  vagrant --version
+  809  ansible --version
+  810  ansible all -i hosts -m ping
+  811  ansible all -i hosts.yml -m ping
+  812  clear
+  813  ansible all -i hosts -m ping -v
+  814  ansible all -i hosts -m ping -vv
+  815  cat /etc/ansible/ansible.cfg 
+  816  clear
+  817  ansible all -i hosts -m ping -vv
+  818  cp hosts.ini host.cfg
+  819  ansible all -i hosts -m ping -vv
+  820  ansible all -m ping -u larry
+  821  ansible moe -m ping -u larry
+  822  ansible all -i ./hosts -m ping -vv
+  823  ansible all -i . -m ping -vv
+  824  clear
+  825  ls
+  826  ls -agl
+  827  ls -ahl
+  828  echo $ANSIBLE_CONFIG 
+  829  rm host.cfg 
+  830  rm host.yml
+  831  ls
+  832  rm hosts.yml
+  833  clear
+  834  cp hosts.ini hosts
+  835  ansible all -i hosts -m ping -vv
+  836  clear
+  837  ansible all -i hosts -m ping
+  838  ansible all -i hosts -m user
+  839  ansible all -i hosts -m command -a "ifconfig"
+  840  ansible all -i funny -m command -a "ifconfig"
+  841  ansible-doc -l
+  842  ansible curly -s -i ./hosts -m ping
+  843  ansible curly -s -i hosts -m ping
+  844  ansible funny -s -i hosts -m ping
+  845  ansible funnier -s -i hosts -m ping
+  846  ansible-playbook -i hosts playbook.yml
+  847  ansible-playbook -i hosts playbook.yml --sudo
+  848  ansible all -i hosts -m command -a "/etc/init.d/nginx status"
+  849  ansible-playbook -i hosts playbook.yml --sudo
+  850  vagrant halt
+  851  clear
+  852  cd Documents/tests/ansible-tuto/
+  853  ls
+  854  vagrant up
+  855  ls -ahl
+  856  rm -rf .vagrant/
+  857  clear
+  858  vagrant up
+  859  vagrant status
+  860  vagrant halt
+  861  clear
+  862  ls
+  863  cd step-00/
+  864  ls
+  865  cat hosts 
+  866  cd ..
+  867  ls
+  868  cat Vagrantfile 
+  869  clear
+  870  cat /1/meminfo
+  871  cd /proc/
+  872  ls
+  873  cd 1
+  874  ls
+  875  cat status 
+  876  ls /proc/1
+  877  clear
+  878  ls /proc/1
+  879  clear
+  880  cat status 
+  881  clear
+  882  cat 1/meminfo
+  883  cat 1/smaps
+  884  ls
+  885  cat smaps 
+  886  sudo cat smaps 
+  887  man status
+  888  clear
+  889  cat 1/smaps
+  890  clear
+  891  cat status 
+  892  clear
+  893  ls
+  894  cd ..
+  895  clear
+  896  ls
+  897  cd ..
+  898  ls
+  899  cd ..
+  900  ls
+  901  cd ..
+  902  cd /home/tigarto/son-install/
+  903  clea
+  904  rclear
+  905  clear
+  906  sudo ansible-playbook utils/deploy/sp.yml -e target=localhost -v
+  907  docker-compose
+  908  sudo docker --version
+  909  sudo curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+  910  sudo chmod +x /usr/local/bin/docker-compose
+  911  sudo docker-compose --version
+  912  clear
+  913  sudo ansible-playbook utils/deploy/sp.yml -e target=localhost -vv
+  914  clear
+  915  cd o/concepto/sistemas-de-control-de-versiones/comandos-utiles-de-la-te
+  916  cd /home/tigarto/Documents/cursos_varios/curso_git/proyectos/cursos/git
+  917  vim file.txt 
+  918  sudo apt-get install vim
+  919  clear
+  920  git config --global user.email helpu1409@gmail.com
+  921  git config --global user.name tigarto
+  922  git config --global color.ui true
+  923  ls
+  924  cd Documents/
+  925  ls
+  926  cd github_criollo/
+  927  ls
+  928  cd 2018-1/
+  929  ls
+  930  cd ..
+  931  ls
+  932  cd ..
+  933  ls
+  934  cd tests/
+  935  ls
+  936  cd ..
+  937  ls
+  938  mkdir cursos_varios
+  939  cd cursos_varios/
+  940  mkdir curso_git
+  941  cd curso_git/
+  942  ls
+  943  mkdir -p proyectos/cursos/git
+  944  cd proyectos/cursos/git/
+  945  mkdir repositorio
+  946  ls
+  947  mkdir test
+  948  ls
+  949  mkdir repositorio2
+  950  cd repositorio
+  951  ls
+  952  touch file.txt
+  953  ls
+  954  rm file.txt 
+  955  cd ..
+  956  ls
+  957  rm -rf repositorio2/
+  958  clear
+  959  ls
+  960  touch file.txt
+  961  vim file.txt 
+  962  pwd
+  963  vim file.txt 
+  964  cat file.txt 
+  965  clear
+  966  git init primer_repo
+  967  ls -ahl primer_repo/
+  968  cat -ahl primer_repo/
+  969  cat primer_repo/
+  970  cat primer_repo/.git/
+  971  clear
+  972  cd primer_repo/
+  973  ls
+  974  touch file.txt
+  975  ls
+  976  cd ..
+  977  ls
+  978  mkdir  segundo_repo
+  979  cd segundo_repo/
+  980  git init
+  981  ls -ahl
+  982  clear
+  983  ls .git/
+  984  cñear
+  985  clear
+  986  rm -rf .git/
+  987  clear
+  988  ls -ahl
+  989  git config --global color.ui auto
+  990  cd ..
+  991  ls
+  992  git init invie
+  993  cd invie/
+  994  touch index.html
+  995  git status 
+  996  git add index.html 
+  997  git status 
+  998  git rm --cached index.html 
+  999  git status 
+ 1000  touch index.css
+ 1001  git status 
+ 1002  git add -A
+ 1003  git status 
+ 1004  git log
+ 1005  git rm -f index.css 
+ 1006  git status 
+ 1007  touch index.css
+ 1008  git status 
+ 1009  git add -n index.css 
+ 1010  git status 
+ 1011  rm index.css 
+ 1012  clear
+ 1013  git commit -m "Inicializar el landing (agregar el index.html)"
+ 1014  git status 
+ 1015  git log
+ 1016  clear
+ 1017  ls
+ 1018  mkdir archivos-clase-13
+ 1019  cd archivos-clase-13/
+ 1020  ls
+ 1021  wget https://github.com/LeonidasEsteban/invie-github/blob/master/acustica.jpg
+ 1022  wget https://github.com/LeonidasEsteban/invie-github/blob/master/clasica.jpg
+ 1023  ls
+ 1024  wget https://github.com/LeonidasEsteban/invie-github/blob/master/footer.jpg
+ 1025  wget https://github.com/LeonidasEsteban/invie-github/blob/master/header.jpg
+ 1026  wget https://github.com/LeonidasEsteban/invie-github/blob/master/hero.jpg
+ 1027  ls
+ 1028  cd ..
+ 1029  ls
+ 1030  rm *.jpg
+ 1031  cd -
+ 1032  cd ~/Downloads/
+ 1033  history | grep g
+ 1034  sudo su
+ 1035  clear
+ 1036  sudo gdebi Brackets.Release.1.12.64-bit.deb 
+ 1037  git log --oneline 
+ 1038  git tag -l
+ 1039  clear
+ 1040  git log --oneline 
+ 1041  cd ~/Downloads/
+ 1042  ls
+ 1043  clear
+ 1044  ls
+ 1045  sudo gdebi code_1.21.1-1521038896_amd64.deb 
+ 1046  sudo apt install gdebi-core
+ 1047  sudo gdebi code_1.21.1-1521038896_amd64.deb 
+ 1048  cd ..
+ 1049  cd Documents/
+ 1050  ls
+ 1051  cd cursos_varios/
+ 1052  ls
+ 1053  cd curso_git/
+ 1054  ls
+ 1055  cd proyectos/
+ 1056  cd cursos/
+ 1057  cd git/
+ 1058  cd invie/
+ 1059  ls
+ 1060  wget https://github.com/LeonidasEsteban/invie-github/blob/master/hero.jpg
+ 1061  ls
+ 1062  clear
+ 1063  ls
+ 1064  git status 
+ 1065  git add index.html 
+ 1066  git status 
+ 1067  git add header.jpg 
+ 1068  git status 
+ 1069  git commit -m "Agregando el header"
+ 1070  git status 
+ 1071  clear
+ 1072  git status 
+ 1073  git add index.html 
+ 1074  git commit -m "Agregando nuevo hero"
+ 1075  ls
+ 1076  git status 
+ 1077  git  add hero.jpg 
+ 1078  git commit -amend 
+ 1079  clear
+ 1080  git commit --amend 
+ 1081  git log
+ 1082  git sta
+ 1083  git status 
+ 1084  clear
+ 1085  git tag --help
+ 1086  clear
+ 1087  git tag -a 0.5 -m 'Version estable del proyecto'
+ 1088  git tag -l
+ 1089  git log 
+ 1090  git tag 0.3 ac85b68aa93d13dc0b0a40d422a6cca001c1fbab
+ 1091  git tag -l
+ 1092  git tag 1.0 21e278d6dc2f3b77c63e31b39edb1d57d6415bf9
+ 1093  git tag -l
+ 1094  git tag -d 1.0
+ 1095  git tag -l
+ 1096  clear
+ 1097  git tag 1.0 21e278d6dc2f3b77c63e31b39edb1d57d6415bf9
+ 1098  git tag -l
+ 1099  git tag -f -a 0.1 -m 'Iniciando el proyecto' 21e278d6dc2f3b77c63e31b39edb1d57d6415bf9
+ 1100  git tag -l
+ 1101  git tag -d 1.0
+ 1102  git tag -l
+ 1103  clear
+ 1104  git log 
+ 1105  clear
+ 1106  git log --oneline
+ 1107  git log 
+ 1108  git log --oneline --graph 
+ 1109  git log -3
+ 1110  git log -1
+ 1111  git log -2
+ 1112  git log 
+ 1113  clear
+ 1114  git log --stat
+ 1115  clear
+ 1116  git config --global alias.superlog log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset%s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abrev-commit
+ 1117  clear
+ 1118  git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+ 1119  git log --stat
+ 1120  git log --oneline --graph 
+ 1121  clear
+ 1122  git log --oneline --graph 
+ 1123  git log --graph 
+ 1124  clear
+ 1125  git diff
+ 1126  cleae
+ 1127  clear
+ 1128  git log --oneline --graph 
+ 1129  git diff ac85b68 
+ 1130  git diff ac85b68 
+ 1131  git diff ac85b68 21e278d
+ 1132  git diff  21e278d ac85b68
+ 1133  clear
+ 1134  git log
+ 1135  git log  --graph 
+ 1136  git log --oneline --graph 
+ 1137  clear
+ 1138  git log --oneline --graph 
+ 1139  git log --oneline
+ 1140  git reset --soft ac85b68
+ 1141  git status
+ 1142  git log --oneline
+ 1143  clear
+ 1144  git status
+ 1145  git log --oneline
+ 1146  git commit -m "Añadiendo nuevo hero"
+ 1147  git log --oneline
+ 1148  clear
+ 1149  git status
+ 1150  clear
+ 1151  git log
+ 1152  clear
+ 1153  git reset --mixed
+ 1154  git reset
+ 1155  git log
+ 1156  clear
+ 1157  git reset --mixed
+ 1158  git log
+ 1159  git reset --mixed ac85b68aa93d13dc0b0a40d422a6cca001c1fbab
+ 1160  git log
+ 1161  git status
+ 1162  git log --oneline
+ 1163  git add index index.html 
+ 1164  git status 
+ 1165  git add index.html 
+ 1166  git status 
+ 1167  git add hero.jpg 
+ 1168  git status 
+ 1169  git commit -m "Sumando nuevo hero"
+ 1170  git status 
+ 1171  git log --oneline
+ 1172  clear
+ 1173  git add acustica.jpg 
+ 1174  git commit 
+ 1175  clear
+ 1176  git add index.html 
+ 1177  git add clasica.jpg 
+ 1178  git status 
+ 1179  git log
+ 1180  git diff 77fec2f91827092e54b21deefaa418a462d73a4d
+ 1181  clear
+ 1182  git status
+ 1183  git reset HEAD clasica.jpg
+ 1184  git status
+ 1185  git add index.html 
+ 1186  git status
+ 1187  git log --oneline
+ 1188  git diff 77fec2f
+ 1189  git commit --amend
+ 1190  clear
+ 1191  git log --oneline
+ 1192  clear
+ 1193  git status
+ 1194  git add .
+ 1195  git status
+ 1196  clear
+ 1197  git reset --hard
+ 1198  git status
+ 1199  ls
+ 1200  git status 
+ 1201  clear
+ 1202  git reset --hard 
+ 1203  git status 
+ 1204  clear
+ 1205  git reset --hard 
+ 1206  git status 
+ 1207  clear
+ 1208  git log
+ 1209  clear
+ 1210  git log --oneline 
+ 1211  git reset --hard 21e278d
+ 1212  clear
+ 1213  git status 
+ 1214  git log --oneline 
+ 1215  clear
+ 1216  git log 
+ 1217  git reset --hard 6abe961
+ 1218  git log 
+ 1219  git log > respaldo_log.txt
+ 1220  ls
+ 1221  git add respaldo_log.txt 
+ 1222  git commit -m "Agregando un respaldo del log"
+ 1223  clear
+ 1224  git status 
+ 1225  git log 
+ 1226  clear
+ 1227  git log --graph 
+ 1228  git log --graph --oneline
+ 1229  clear
+ 1230  ls
+ 1231  ls .git/logs/refs/heads/master 
+ 1232  clear
+ 1233  ls
+ 1234  git branch responsive
+ 1235  git branch -l
+ 1236  git branch x
+ 1237  git branch -l
+ 1238  git branch -d x
+ 1239  git branch -l
+ 1240  clear
+ 1241  git branch -l
+ 1242  git branch -m responsive RD
+ 1243  git branch -l
+ 1244  git branch -m master MS
+ 1245  git branch -l
+ 1246  git branch -m MS master
+ 1247  git branch -l
+ 1248  clear
+ 1249  git branch -l
+ 1250  git checkout RD
+ 1251  git branch -l
+ 1252  git checkout master
+ 1253  git branch -l
+ 1254  git log --oneline
+ 1255  git checkout f685205
+ 1256  git checkout master
+ 1257  clear
+ 1258  git checkout -b nueva-imagen
+ 1259  git branch -l
+ 1260  git checkout master
+ 1261  git branch -l
+ 1262  git log --graph 
+ 1263  clear
+ 1264  git checkout RD
+ 1265  git branch -l
+ 1266  git checkout master
+ 1267  git checkout -b hotfix
+ 1268  git branch -l
+ 1269  clear
+ 1270  history
+ 1271  history | grep sudo
+ 1272  sudo gdebi ~/Downloads/gitkraken-amd64.deb 
+ 1273  clear
+ 1274  ls
+ 1275  git branch -l
+ 1276  clear
+ 1277  git status 
+ 1278  clear
+ 1279  git add index.html 
+ 1280  git status 
+ 1281  git commit -m "hotfix 1"
+ 1282  git status 
+ 1283  git checkout master
+ 1284  git branch -l
+ 1285  git add clasica.jpg 
+ 1286  git add footer.jpg 
+ 1287  git commit -m "Subiendo imagenes footer y clasica"
+ 1288  git branch -l
+ 1289  git checkout hotfix
+ 1290  git branch -l
+ 1291  git status 
+ 1292  clear
+ 1293  git checkout nueva-imagen
+ 1294  git branch -l
+ 1295  git status 
+ 1296  clear
+ 1297  git status 
+ 1298  git add index.html 
+ 1299  git add nueva-version.jpg 
+ 1300  git commit -m "nueva version de invie - verde"
+ 1301  git status 
+ 1302  git checkout RD
+ 1303  clear
+ 1304  git status 
+ 1305  git add index.html 
+ 1306  git add invie-responsive.png 
+ 1307  git status 
+ 1308  clear
+ 1309  git status 
+ 1310  git commit -m "invie responsive"
+ 1311  clear
+ 1312  git branch -l
+ 1313  git checkout master
+ 1314  git branch -l
+ 1315  clear
+ 1316  git status 
+ 1317  git branch -l
+ 1318  git merge hotfix 
+ 1319  git branch -l
+ 1320  clear
+ 1321  git merge RD
+ 1322  git log --oneline 
+ 1323  clear
+ 1324  git log --oneline 
+ 1325  clear
+ 1326  git branch -l
+ 1327  git merge nueva-imagen
+ 1328  git status 
+ 1329  git add -A
+ 1330  git status 
+ 1331  git commit
+ 1332  git status 
+ 1333  git log --oneline 
+ 1334  clear
+ 1335  git log --online --graph 
+ 1336  git log --oneline --graph 
+ 1337  git log --graph 
+ 1338  clear
+ 1339  cd ~/Downloads/
+ 1340  clear
+ 1341  gcc enproceso2.c 
+ 1342  clear
+ 1343  ls
+ 1344  ./a.out -l /proc/1070
+ 1345  clear
+ 1346  gcc enproceso2.c 
+ 1347  ./a.out -l /proc/1070
+ 1348  ./a.out -l /proc/10
+ 1349  clear
+ 1350  gcc enproceso2.c 
+ 1351  ./a.out -l /proc/10
+ 1352  cat /proc/10/stat
+ 1353  cat /proc/10/status 
+ 1354  clear
+ 1355  exit
+ 1356  cd Documents/cursos_varios/curso_git/proyectos/cursos/git/invie/
+ 1357  clear
+ 1358  ls
+ 1359  clear
+ 1360  git log --oneline 
+ 1361  git branch -l
+ 1362  clear
+ 1363  git branch -l
+ 1364  git checkout updateA
+ 1365  clear
+ 1366  history > respaldo_log.txt 
