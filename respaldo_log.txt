@@ -1,0 +1,23 @@
+commit 6abe9617ff6b68d52ffe0c8eda52f8658a893c8e
+Author: tigarto <helpu1409@gmail.com>
+Date:   Tue Mar 27 22:37:48 2018 -0500
+
+    Agregando guitarra acustica
+
+commit f685205d8d0c1dd781f1c1928bb295e74ef74f07
+Author: tigarto <helpu1409@gmail.com>
+Date:   Tue Mar 27 22:36:34 2018 -0500
+
+    Sumando nuevo hero
+
+commit ac85b68aa93d13dc0b0a40d422a6cca001c1fbab
+Author: tigarto <helpu1409@gmail.com>
+Date:   Tue Mar 27 21:37:53 2018 -0500
+
+    Agregando el header
+
+commit 21e278d6dc2f3b77c63e31b39edb1d57d6415bf9
+Author: tigarto <helpu1409@gmail.com>
+Date:   Tue Mar 27 19:07:21 2018 -0500
+
+    Inicializar el landing (agregar el index.html)
